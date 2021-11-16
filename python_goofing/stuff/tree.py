@@ -2,14 +2,12 @@ class Tree:
     def __init__(self, root = None) -> None:
         self.root = root
     
-
 class Node:
     def __init__(self, value = None) -> None:
         self.value = value
         self.left = None
         self.right = None
         self.next = None
-
 
 class Queue:
     def __init__(self):

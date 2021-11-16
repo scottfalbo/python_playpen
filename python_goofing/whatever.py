@@ -1,11 +1,14 @@
 from stuff.thing import Something
 from stuff.tree import *
 from stuff.animator import *
+from stuff.api_request import *
 
+# --------------------- basic method call from another class
 def hello():
     Something.do_something()
 hello()
 
+#-----------------------------  binary tree stuff
 def make_tree():
     tree = Tree()
     node1 = Node(6)
@@ -38,9 +41,13 @@ def add_leaves(tree):
 tree = make_tree()
 print(add_leaves(tree))
 
+# --------------------------- animator stuff
+
 batman = "assets/batman.txt"
 print(print_ascii(batman))
         
-animate_ascii("assets/animation", 5, 3, 0.1)
+# animate_ascii("assets/animation", 5, 3, 0.1)
 
+# ----------------------------- api calls
 
+print(get_quote())
