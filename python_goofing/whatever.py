@@ -41,4 +41,6 @@ print(add_leaves(tree))
 batman = "assets/batman.txt"
 print(print_ascii(batman))
         
-animate_ascii("assets/animation", 5, 3, 0.25)
+animate_ascii("assets/animation", 5, 3, 0.1)
+
+
