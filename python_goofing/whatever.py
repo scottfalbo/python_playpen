@@ -50,4 +50,4 @@ print(print_ascii(batman))
 
 # ----------------------------- api calls
 
-print(get_quote())
+get_quote()

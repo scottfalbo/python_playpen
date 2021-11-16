@@ -1,6 +1,5 @@
 import requests
 
-
 def get_quote():
     path = "http://sunnyquotes.net/q.php?random"
     r = requests.get(url = path)
@@ -8,4 +7,3 @@ def get_quote():
 
     print(data['sqQuote'])
     print(data['sqWho'])
-
