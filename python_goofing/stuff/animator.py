@@ -8,16 +8,15 @@ def print_ascii(path):
 
     
 def colorize_text(text):
-    text = re.sub("{red?}","\\033[1;31m", text);
-    text = re.sub("{green?}","\\033[1;32m", text);
-    text = re.sub("{yellow?}","\\033[1;33m", text);
-    text = re.sub("{blue?}","\\033[1;34m", text);
-    text = re.sub("{purple?}","\\033[1;35m", text);
-    text = re.sub("{cyan?}","\\033[1;36m", text);
-    text = re.sub("{white?}","\\033[1;37m", text);
-    text = re.sub("{end?}","\\033[0m", text);
+    text = re.sub("{red?}","\\033[1;31m", text)
+    text = re.sub("{green?}","\\033[1;32m", text)
+    text = re.sub("{yellow?}","\\033[1;33m", text)
+    text = re.sub("{blue?}","\\033[1;34m", text)
+    text = re.sub("{purple?}","\\033[1;35m", text)
+    text = re.sub("{cyan?}","\\033[1;36m", text)
+    text = re.sub("{white?}","\\033[1;37m", text)
+    text = re.sub("{end?}","\\033[0m", text)
     return text
-
 
 def animate_ascii(path, frames, loops=1, delay=0.5):
   print(" ")
@@ -31,7 +30,3 @@ def animate_ascii(path, frames, loops=1, delay=0.5):
         print(text)
         time.sleep(delay)
 
-
-batman = "batman.txt"
-print(print_ascii(batman))
-animate_ascii("animation", 5, 3, 0.25)

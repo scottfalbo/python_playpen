@@ -1,5 +1,6 @@
 from stuff.thing import Something
 from stuff.tree import *
+from stuff.animator import *
 
 def hello():
     Something.do_something()
@@ -36,5 +37,8 @@ def add_leaves(tree):
 
 tree = make_tree()
 print(add_leaves(tree))
-        
 
+batman = "assets/batman.txt"
+print(print_ascii(batman))
+        
+animate_ascii("assets/animation", 5, 3, 0.25)
